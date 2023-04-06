@@ -1,0 +1,2136 @@
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Satisfy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<a id="but"></a>
+
+
+
+    <div class="container">
+	
+<header class="header">
+<div class="logo">
+	<div class="img_logo"></div>
+	<div class="text_logo"> <p>Metamorfosa</p> </div>	
+</div>
+<div class="line1"></div>
+<div class="menu">
+<a href="#"><p>Главная</p></a>
+<a href="#o_nas"><p>О нас</p></a>
+<a href="#categ">	<p>Категории</p></a>
+<a href="#news">	<p>Новости</p></a>
+<a href="#cont">	<p>Контакты</p></a>
+</div>
+<div class="line2"></div>
+<div class="number">
+	<p>belovaluda@yandex.ru</p>
+	<p>+79057769890</p>
+</div>
+</header>
+
+<section class="section" id="o_nas">
+	<h1>О нас</h1>
+<div class="aboutus">
+	<div class="img-txt1">
+	<div class="txt1"><p>Косметика для лица Mesolab, Kosmoteros. Это производители совместной французской - российской –швейцарской профессиональной линейки по уходу за лицом и телом.Использование современных нанотехнологий, современного оборудования, знания и опыт химиков и косметологов. </p>
+	</div>
+	<div class="img_txt1"></div>
+</div>
+<div class="img-txt2">
+	<div class="img_txt2"></div>
+	<div class="txt2"><p>Богатейший опыт специалистов – выбор  и состав продукции. Создание новых косметических формул. Именно это позволяет нашей коже выглядеть моложе. Эти линейки – салонный и домашний уход. Позволяет использовать разные подходы к решению проблем кожи и ухода за ней.  </p>
+	</div>
+	
+</div>
+ <div class="img-txt3">
+	<div class="txt3"><p>Микробиота, эпигенетика,  аутофагия, пептиды т.д.- это научный подход  к косметике. Была  присвоена  нобелевская премия за научные исследования. Не многие линейки имеют такой современный и высокотехнологический состав. Выбор сывороток, эмульсий, кремов, масок, пилингов.   </p></div>
+	<div class="img_txt3"></div>
+</div>
+<div class="img-txt4">
+	<div class="img_txt4"></div>
+	<div class="txt4"><p>Сертифицированная продукция для аппаратных процедур, мануальных техник, инъекционных техник. Домашний уход гарантирует поддержание результатов в домашних условиях.</p>
+		<div class="button1 block11">Оставить заявку</div>
+	</div>
+</div>
+</div>
+</section> 
+
+<section class="catigories" id="categ">
+<h1>Категории</h1>
+<div class="title">
+	<p>Современная космоцевтика предлагает широкий спектр: поверхностное очищение, глубокое очищение, эффективная тонизация, инновационные сыворотки, гиалуроновые гели и физиологичные кремы.</p>
+</div>
+<h3>ОЧИЩЕНИЕ</h3>
+
+<section class="slider_block">
+	<div class="container">
+
+		<!--Слайдер-->
+
+<style>
+			
+/* стили основного контейнера слайдера */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+  position: relative;
+  height: 1309px;
+  overflow: hidden;
+  
+  
+}
+
+/* стили для контейнера слайдов */
+.slider__items,.slider__items2 {
+  display: flex;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+.slider__item,.slider__item2 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control,.slider__control2 {
+  position: absolute;
+  top: 32%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control_show,.slider__control_show2 {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control2:hover,
+.slider__control:focus,
+.slider__control2:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_prev,.slider__control_prev2 {
+  left: 0;
+}
+
+.slider__control_next,.slider__control_next2 {
+  right: 0;
+}
+
+.slider__control::before,
+.slider__control2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before,
+.slider__control_prev2::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before,
+.slider__control_next2::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+.slider__indicators,.slider__indicators2 {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider__indicators li,
+.slider__indicators2 li {
+	display: none;
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active,
+.slider__indicators2 li.active {
+  background-color: #fff;
+}
+
+/* для стилизации текущего слайдера */
+.img-fluid,.img-fluid2 {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+</style>
+	   
+		<div class="slider">
+			<div class="slider__wrapper">
+			  <div class="slider__items">
+				<div class="slider__item">
+					<div class="all-1">
+						<div class="card_fon">
+						<div class="card">
+						 <h5>Очищение</h5>
+						<div class="aim">
+							<h1 class="arti">DM</h1>
+							<img src="images/cards/1.png" height="170px" alt="">
+							<h6 class="ml">Флакон с дозатором  700мл/<br>250мл</h6>
+						</div>
+						<h2>ДЕЛИКАТНОЕ МОЛОЧКО
+							DELICATE MILK</h2>
+						<p>Активные ингредиенты: ламеллярная эмульсия, экстракт гамамелиса, масло ши, масло  макадамии, масло авокадо, глицерин
+						   <br> Действие:  Ламеллярная эмульсия 
+							с очищающим комплексом экстрактов.
+							Молочко деликатно /эффективно снимает макияж, удаляет водо- и жирорастворимые 
+							загрязнения. Подходит для всех типов кожи и чувствительной.
+						   <br> Применение: небольшое количество молочка нанести на лицо и шею, легкими круговыми движениями ладоней. Затем смыть водой. 
+							Закончить ритуал очищения необходимо тоником.
+							</p>
+						<span>Подробнее...</span>
+						<div class="price_button">
+							<h3>3200.00руб/1700.00руб</h3>
+							<h2 class="block11">заказать</h2>
+						</div>
+						</div>
+						</div>
+				
+						<div class="card_fon">
+					<div class="card">
+						<h5>Очищение</h5>
+					   <div class="aim">
+						   <h1 class="arti">GCM</h1>
+						   <img src="images/cards/2.jpg" height="170px" alt="">
+						   <h6 class="ml"> Флакон с пен/обр  160 мл</h6>
+					   </div>
+					   <h2>МУСС НЕЖНЫЙ ОЧИЩАЮЩИЙ						
+						GENTLE
+						CLEANSING
+						MOUSSE
+						</h2>
+					   <p>Активные ингредиенты: дистиллят василька,  капсулы диатомовых водорослей с экстрактом ламинарии, глицерин, лимонная кислота
+						<br>Действие: деликатное двухфазное средство из эмульсии и минимального количества ПАВов для снятия макияжа с глаз и очищения кожи лица, шеи и декольте. Вместо воды 
+						в составе  мусса  дистиллят василька, очищение не вызывает 
+						раздражение даже у сверхчувствительной кожи. Экстракт ламинарии способствует 
+						восстановлению ионного баланса. Подходит для любого типа кожи.
+						<br>Применение: перед употреблением необходимо встряхнуть флакон. Небольшое количество мусса (1-2 нажатия помпы) нанести 
+						на увлажненную кожу лица, шеи и 
+						декольте легкими круговыми движениями.  Смыть водой, промокнуть кожу сухой салфеткой и оросить тоником. 
+						   </p>
+					   <span>Подробнее...</span>
+					   <div class="price_button">
+						   <h3>1800.00руб</h3>
+						   <h2 class="block11">заказать</h2>
+					   </div>
+				   </div>
+						</div>
+				
+						<div class="card_fon">
+				   <div class="card">
+					<h5>Очищение</h5>
+				   <div class="aim">
+					   <h1 class="arti">EGP</h1>
+					   <img src="images/cards/3.png" height="170px" alt="">
+					   <h6 class="ml">Банка <br>300мл/150мл</h6>
+				   </div>
+				   <h2>ЭНЗИМ-ГЕЛЬ
+					С ПИЛИНГ-ЭФФЕКТОМ
+					ENZYMATIC
+					GEL-PEELING
+					</h2>
+				   <p>Активные ингредиенты: Bacilus Frement, инкапсулиновые ферменты экстракта гибискуса ,экстракта грейпфрута
+					<br>Действие: Гель с уникальной 
+					энзимной системой эксфолиации без абразива для кожи лица / тела. Bacilus Frement, мягкий аналог альфа-гидрокислот, в сочетании с ферментами гибискуса и грейпфрута разрушают слабые белковые связи клеток верхнего рогового слоя. Энзим- гель  повышает биодоступность  любых косметических средств. В отличие от поверхностных химических пилингов не обладает раздражающим действием. Не 
+					требует смывания, кроме процедуры механической или ультразвуковой чистки.
+					<br>Применение: После поверхностного очищения нанести на кожу круговыми движениями, выполнить массаж до полного впитывания геля. Можно не смывать. Для подготовки к процедуре чистки необходимо после нанесения Энзим-геля закрыть лицо 
+					плёнкой и тёплым компрессом на 10-15 минут. Остатки  удалить  с помощью 
+					влажного тёплого полотенца. Далее, нанести базовый Гиалуроновый гель. Приступить к чистке.
+					
+					   </p>
+				   <span>Подробнее...</span>
+				   <div class="price_button">
+					   <h3>4600.00руб/1200.00руб
+						</h3>
+					   <h2 class="block11">заказать</h2>
+				   </div>
+				</div>
+						</div>
+				
+						<div class="card_fon">
+				<div class="card">
+					<h5>Очищение</h5>
+				   <div class="aim">
+					   <h1 class="arti">DCG</h1>
+					   <img src="images/cards/4.png" height="170px" alt="">
+					   <h6 class="ml">Флакон с дозатором  700мл/<br>250мл</h6>
+				   </div>
+				   <h2 style="font-size:11px;">ОЧИЩ. ГЕЛЬ
+					С ФРУКТ.
+					КИСЛ-МИ
+					DEEP
+CLEANSING
+GEL
+WITH A.H.A.
+(рН = 3.5)
+</h2>
+				   <p>
+					Гель для глубокого очищения и нормализации гидролипидного и рН-баланса кожи. Рекомендуется к  курсовому применению вне зависимости от типа и возраста кожи. Эффективен для анти-акне и анти-эйдж программ. Благотворно влияет на кожу с сосудистой патологией и выраженной капиллярной сеточкой. Сохраняет равновесие и поддерживает качество микробиома кожи. Используется во всех профессиональных программах на этапе очищения и подготовки кожи к активным процедурам: химические пилинги, биоревитализация, мезотерапия, аппаратное воздействие, любой эстетический уход. 
+					<br>Активные ингредиенты:
+					концентрированная смесь экстрактов лимона, черники, сахарного тростника, винограда, яблока, витамин В5, мягкие ПАВы. Содержит 55% фруктовых кислот биологического происхождения: лимонную, молочную, яблочную, гликолевую, винную. Данный комплекс соответствует стандартам ECOCERT для экологической и органической косметики
+					  
+				</p>
+				   <span>Подробнее...</span>
+				   <div class="price_button">
+					   <h3>4300.00руб/2200.00руб</h3>
+					   <h2 class="block11">заказать</h2>
+				   </div>
+				</div>
+						</div>
+				
+						<div class="card_fon">
+				<div class="card">
+				   <h5>Очищение</h5>
+				  <div class="aim">
+					  <h1 class="arti">EP</h1>
+					  <img src="images/cards/5.jpg" height="170px" alt="">
+					  <h6 class="ml">30гр</h6>
+				  </div>
+				  <h2 style="font-size:11px;">МАСКА ОЧИЩАЮЩАЯ ЭНЗИМНАЯ ПАПАЙЯ И АНАНАС
+					ENZYMATIC  PEELING</h2>
+				  <p>
+					Маска деликатно отшелушивает верхний слой кожи, стимулируя обновление клеток.  Подготовительный этап в программах ухода за кожей. Экстракты папайи и ананаса содержат протеолитические ферменты папаин и бромелайн. Ослабляют сцепление корнеоцитов, разрушая структурные химические связи десмосом и стимулируя отшелушивание роговых чешуек. Каолин – белая глина. Богата цинком, кремнием и магнием. Благодаря каолину, маска обладает антисептическим и регенерирующим действием. 
+					<br>Активные ингредиенты: сухие экстракты папайи и ананаса, каолин.
+					
+				  </p>
+				  <span>Подробнее...</span>
+				  <div class="price_button">
+					  <h3>400.00руб</h3>
+					  <h2 class="block11">заказать</h2>
+				  </div>
+				</div>
+						</div>
+				
+						<div class="card_fon">
+				<div class="card">
+				<h5>Очищение</h5>
+				<div class="aim">
+				  <h1 class="arti">ASM</h1>
+				  <img src="images/cards/6.jpg" height="170px" alt="">
+				  <h6 class="ml">40гр</h6>
+				</div>
+				<h2>МАСКА СЕБОРЕГУЛИРУЮЩАЯ 
+					<br>ACNE STOP MASK</h2>
+				<p>
+					Средство для бережного и глубокого очищения кожи. Мелкодисперсная пудра, которая при контакте с водой превращается в нежную воздушную пенку, благодаря «зеленым» ПАВам. Маска-пудра с выраженным бактерицидным/противовоспалительным действием. Сужает поры, регулирует микрофлору и нормализует гидролипидный баланс кожи.
+					Рекомендуется к обязательному применению в программах для комбинированной и жирной кожи с воспалительными элементами.
+					Домашний уход в качестве глубокого очищения вечером, после снятия макияжа, на 1-6 месяцев, в зависимости от состояния кожи. Также используется в виде маски, время экспозиции 20 мин.
+					<br>Активные компоненты: Экстракт лопуха, лиофилизированный сок алоэ барбаденсис, ниацинамид, аллантоин.
+						
+				</p>
+				<span>Подробнее...</span>
+				<div class="price_button">
+				  <h3>2000.00руб</h3>
+				  <h2 class="block11">заказать</h2>
+				</div>
+				</div>
+						</div>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="all-2">
+						<div class="card_fon">
+						<div class="card">
+						 <h5>Очищение</h5>
+						<div class="aim">
+							<h1 class="arti">EM</h1>
+							<img src="images/cards/7.jpg" height="170px" alt="">
+							<h6 class="ml">150мл</h6>
+						</div>
+						<h2>МАСКА ЭКСФОЛИАНТ
+							EXFOLIATING MASK</h2>
+						<p>Маска-пилинг  с ценными маслами и двойной системой эксфолиации. Маска-пилинг с ценными маслами и двойной системой эксфолиации – энзимной и абразивной, позволяет эффективно и мягко провести глубокое очищение кожи. 
+							Применение:
+							нанести маску на кожу лица, шеи и декольте, избегая области вокруг глаз. Закрыть плёнкой и тёплым компрессом на 5-10 минут. Снять плёнку и круговыми движениями пальцев выполнить легкий массаж. Движения направлены от центра лица к периферии. В завершении на 3 минуты нанести на лицо компресс в виде влажной теплой махровой салфетки, затем тщательно удалить остатки маски. 
+							Активные ингредиенты: ламеллярная эмульсия, Bacillus Ferment, экстракт грейпфрута, экстракт ананаса, экстракт гибискуса, абразивный порошок из диатомовых водорослей, масло ши, календулы, макадамии.
+							
+							</p>
+						<span>Подробнее...</span>
+						<div class="price_button">
+							<h3>1700.00руб</h3>
+							<h2 class="block11">заказать</h2>
+						</div>
+						</div>
+						</div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+				
+					</div>
+				</div>
+
+			  </div>
+			</div>
+			<a class="slider__control slider__control_prev" href="#" role="button"></a>
+			<a class="slider__control slider__control_next" href="#" role="button"></a>
+		  </div>
+		
+		  <script>
+			'use strict';
+			var slideShow = (function () {
+			  return function (selector, config) {
+				var
+				  _slider = document.querySelector(selector), // основный элемент блока
+				  _sliderContainer = _slider.querySelector('.slider__items'), // контейнер для .slider-item
+				  _sliderItems = _slider.querySelectorAll('.slider__item'), // коллекция .slider-item
+				  _sliderControls = _slider.querySelectorAll('.slider__control'), // элементы управления
+				  _currentPosition = 0, // позиция левого активного элемента
+				  _transformValue = 0, // значение транфсофрмации .slider_wrapper
+				  _transformStep = 100, // величина шага (для трансформации)
+				  _itemsArray = [], // массив элементов
+				  _timerId,
+				  _indicatorItems,
+				  _indicatorIndex = 0,
+				  _indicatorIndexMax = _sliderItems.length - 1,
+				  _stepTouch = 50,
+				  _config = {
+					isAutoplay: false, // автоматическая смена слайдов
+					directionAutoplay: 'next', // направление смены слайдов
+					delayAutoplay: 1700000, // интервал между автоматической сменой слайдов
+					isPauseOnHover: true // устанавливать ли паузу при поднесении курсора к слайдеру
+				  };
+		
+				// настройка конфигурации слайдера в зависимости от полученных ключей
+				for (var key in config) {
+				  if (key in _config) {
+					_config[key] = config[key];
+				  }
+				}
+		
+				// наполнение массива _itemsArray
+				for (var i = 0, length = _sliderItems.length; i < length; i++) {
+				  _itemsArray.push({ item: _sliderItems[i], position: i, transform: 0 });
+				}
+		
+				// переменная position содержит методы с помощью которой можно получить минимальный и максимальный индекс элемента, а также соответствующему этому индексу позицию
+				var position = {
+				  getItemIndex: function (mode) {
+					var index = 0;
+					for (var i = 0, length = _itemsArray.length; i < length; i++) {
+					  if ((_itemsArray[i].position < _itemsArray[index].position && mode === 'min') || (_itemsArray[i].position > _itemsArray[index].position && mode === 'max')) {
+						index = i;
+					  }
+					}
+					return index;
+				  },
+				  getItemPosition: function (mode) {
+					return _itemsArray[position.getItemIndex(mode)].position;
+				  }
+				};
+		
+				// функция, выполняющая смену слайда в указанном направлении
+				var _move = function (direction) {
+				  var nextItem, currentIndicator = _indicatorIndex;;
+				  if (direction === 'next') {
+					_currentPosition++;
+					if (_currentPosition > position.getItemPosition('max')) {
+					  nextItem = position.getItemIndex('min');
+					  _itemsArray[nextItem].position = position.getItemPosition('max') + 1;
+					  _itemsArray[nextItem].transform += _itemsArray.length * 100;
+					  _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+					}
+					_transformValue -= _transformStep;
+					_indicatorIndex = _indicatorIndex + 1;
+					if (_indicatorIndex > _indicatorIndexMax) {
+					  _indicatorIndex = 0;
+					}
+				  } else {
+					_currentPosition--;
+					if (_currentPosition < position.getItemPosition('min')) {
+					  nextItem = position.getItemIndex('max');
+					  _itemsArray[nextItem].position = position.getItemPosition('min') - 1;
+					  _itemsArray[nextItem].transform -= _itemsArray.length * 100;
+					  _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+					}
+					_transformValue += _transformStep;
+					_indicatorIndex = _indicatorIndex - 1;
+					if (_indicatorIndex < 0) {
+					  _indicatorIndex = _indicatorIndexMax;
+					}
+				  }
+				  _sliderContainer.style.transform = 'translateX(' + _transformValue + '%)';
+				  _indicatorItems[currentIndicator].classList.remove('active');
+				  _indicatorItems[_indicatorIndex].classList.add('active');
+				};
+		
+				// функция, осуществляющая переход к слайду по его порядковому номеру
+				var _moveTo = function (index) {
+				  var i = 0, direction = (index > _indicatorIndex) ? 'next' : 'prev';
+				  while (index !== _indicatorIndex && i <= _indicatorIndexMax) {
+					_move(direction);
+					i++;
+				  }
+				};
+		
+				// функция для запуска автоматической смены слайдов через промежутки времени
+				var _startAutoplay = function () {
+				  if (!_config.isAutoplay) {
+					return;
+				  }
+				  _stopAutoplay();
+				  _timerId = setInterval(function () {
+					_move(_config.directionAutoplay);
+				  }, _config.delayAutoplay);
+				};
+		
+				// функция, отключающая автоматическую смену слайдов
+				var _stopAutoplay = function () {
+				  clearInterval(_timerId);
+				};
+		
+				// функция, добавляющая индикаторы к слайдеру
+				var _addIndicators = function () {
+				  var indicatorsContainer = document.createElement('ol');
+				  indicatorsContainer.classList.add('slider__indicators');
+				  for (var i = 0, length = _sliderItems.length; i < length; i++) {
+					var sliderIndicatorsItem = document.createElement('li');
+					if (i === 0) {
+					  sliderIndicatorsItem.classList.add('active');
+					}
+					sliderIndicatorsItem.setAttribute("data-slide-to", i);
+					indicatorsContainer.appendChild(sliderIndicatorsItem);
+				  }
+				  _slider.appendChild(indicatorsContainer);
+				  _indicatorItems = _slider.querySelectorAll('.slider__indicators > li')
+				};
+		
+				var _isTouchDevice = function () {
+				  return !!('ontouchstart' in window || navigator.maxTouchPoints);
+				};
+		
+				// функция, осуществляющая установку обработчиков для событий 
+				var _setUpListeners = function () {
+				  var _startX = 0;
+				  if (_isTouchDevice()) {
+					_slider.addEventListener('touchstart', function (e) {
+					  _startX = e.changedTouches[0].clientX;
+					  _startAutoplay();
+					});
+					_slider.addEventListener('touchend', function (e) {
+					  var
+						_endX = e.changedTouches[0].clientX,
+						_deltaX = _endX - _startX;
+					  if (_deltaX > _stepTouch) {
+						_move('prev');
+					  } else if (_deltaX < -_stepTouch) {
+						_move('next');
+					  }
+					  _startAutoplay();
+					});
+				  } else {
+					for (var i = 0, length = _sliderControls.length; i < length; i++) {
+					  _sliderControls[i].classList.add('slider__control_show');
+					}
+				  }
+				  _slider.addEventListener('click', function (e) {
+					if (e.target.classList.contains('slider__control')) {
+					  e.preventDefault();
+					  _move(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+					  _startAutoplay();
+					} else if (e.target.getAttribute('data-slide-to')) {
+					  e.preventDefault();
+					  _moveTo(parseInt(e.target.getAttribute('data-slide-to')));
+					  _startAutoplay();
+					}
+				  });
+				  document.addEventListener('visibilitychange', function () {
+					if (document.visibilityState === "hidden") {
+					  _stopAutoplay();
+					} else {
+					  _startAutoplay();
+					}
+				  }, false);
+				  if (_config.isPauseOnHover && _config.isAutoplay) {
+					_slider.addEventListener('mouseenter', function () {
+					  _stopAutoplay();
+					});
+					_slider.addEventListener('mouseleave', function () {
+					  _startAutoplay();
+					});
+				  }
+				};
+		
+				// добавляем индикаторы к слайдеру
+				_addIndicators();
+				// установливаем обработчики для событий
+				_setUpListeners();
+				// запускаем автоматическую смену слайдов, если установлен соответствующий ключ
+				_startAutoplay();
+		
+				return {
+				  // метод слайдера для перехода к следующему слайду
+				  next: function () {
+					_move('next');
+				  },
+				  // метод слайдера для перехода к предыдущему слайду          
+				  left: function () {
+					_move('prev');
+				  },
+				  // метод отключающий автоматическую смену слайдов
+				  stop: function () {
+					_config.isAutoplay = false;
+					_stopAutoplay();
+				  },
+				  // метод запускающий автоматическую смену слайдов
+				  cycle: function () {
+					_config.isAutoplay = true;
+					_startAutoplay();
+				  }
+				}
+			  }
+			}());
+		
+			slideShow('.slider', {
+			  isAutoplay: true
+			});
+		  </script>
+		  
+		<!--Слайдер-->
+
+
+	</div>
+</section>
+
+<h3 class="ton">ТОНИЗАЦИЯ</h3> 
+
+<section class="slider_block">
+	<div class="container">
+
+		<!--Слайдер-->
+
+<style>
+			
+/* стили основного контейнера слайдера */
+.slider2 {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper2 {
+
+  position: relative;
+  height: 1309px;
+  overflow: hidden;
+  
+  
+}
+
+/* стили для контейнера слайдов */
+.slider__items,.slider__items2 {
+  display: flex;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+.slider__item,.slider__item2 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control,.slider__control2 {
+  position: absolute;
+  top: 32%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control_show,.slider__control_show2 {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control2:hover,
+.slider__control:focus,
+.slider__control2:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_prev,.slider__control_prev2 {
+  left: 0;
+}
+
+.slider__control_next,.slider__control_next2 {
+  right: 0;
+}
+
+.slider__control::before,
+.slider__control2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before,
+.slider__control_prev2::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before,
+.slider__control_next2::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+.slider__indicators,.slider__indicators2 {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider__indicators li,
+.slider__indicators2 li {
+	display: none;
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active,
+.slider__indicators2 li.active {
+  background-color: #fff;
+}
+
+/* для стилизации текущего слайдера */
+.img-fluid,.img-fluid2 {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+</style>
+	   
+		<div class="slider2">
+			<div class="slider__wrapper">
+			  <div class="slider__items">
+				<div class="slider__item">
+					<div class="all-2">
+						<div class="card_fon">
+						<div class="card">
+						 <h5>Тонизация</h5>
+						<div class="aim">
+							<h1 class="arti">HLAS</h1>
+							<img src="images/cards/tonis/1.png" height="170px" alt="">
+							<h6 class="ml">Флакон с дозат. 700 мл,
+								флакон со спреем 250 мл
+								</h6>
+						</div>
+						<h2>СЕБОРЕГУЛИРУЮЩИЙ 
+							ТРАВЯНОЙ ЛОСЬОН
+							HERBAL
+							LOTION
+							ACNE STOP
+							</h2>
+						<p>Ингредиенты: гидролат соцветий иссопа, экстракт коньяк-маннана, экстракт таволги вязолистной, экстракт семян чечевицы Действие: лосьон предназначен для себорегуляции жирной кожи с акне. Оказывает 
+							антибактериальное и успокаивающее действие на кожу. Стимулирует внутриклеточную выработку антимикробных пептидов. 
+							Восстанавливает гидролипидный баланс. Существенно снижает проявление акне. Обеспечивает регулярный детокс. Активно 
+							сужает поры, устраняя причины их расширения. Эффективно восстанавливает жирную кожу после травматичных косметических процедур чистки. Не сушит кожу, а 
+							интенсивно увлажняет.
+							
+							</p>
+						<span>Подробнее...</span>
+						<div class="price_button">
+							<h3>3800.00руб/1700.00руб</h3>
+							<h2 class="block11">заказать</h2>
+						</div>
+						</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Тонизация</h5>
+							<div class="aim">
+								<h1 class="arti">PTFRP</h1>
+								<img src="images/cards/tonis/1.png" height="170px" alt="">
+								<h6 class="ml">Флакон с дозат. 700 мл,
+									флакон со спреем 250 мл
+									
+									</h6>
+							</div>
+							<h2>ТОНИК 
+								ИЗ ЛЕПЕСТКОВ РОЗ
+								PERFECT
+								TONIC FROM
+								ROSE-PETALS
+								
+								</h2>
+							<p>Ингредиенты: гидролат лепестков дамасской розы (centifolia rose distilled), 
+								100% натуральный продукт Действие: изысканный тоник мгновенно увлажняет и восстанавливает атоничную и обезвоженную кожу. Стимулирует процессы микроциркуляции, активно тонизирует и омолаживает кожу. Романтичный и 
+								чувственный запах моментально улучшает настроение. Высокоэффективное средство 
+								ухода для кожи всех типов. Рекомендуется как обязательный элемент программы для восстановления сухой и чувствительной 
+								кожи.  Применение: после очищения протереть кожу лица, шеи и области декольте ватным диском, смоченным тоником. В домашнем уходе с помощью спрея оросить лосьоном 
+								кожу лица, шеи, области декольте и др. участков, затем деликатно протереть ватным диском и оросить еще раз до полного впитывания.
+								
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>3200.00руб/1600.00руб</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Тонизация</h5>
+							<div class="aim">
+								<h1 class="arti">LT</h1>
+								<img src="images/cards/tonis/1.png" height="170px" alt="">
+								<h6 class="ml">Флакон с дозат. 700 мл,
+									флакон со спреем 250 мл
+									
+									</h6>
+							</div>
+							<h2>ЛАКТОБИОТИЛОВЫЙ 
+								ТОНИК
+								LACTOBIOTYL
+								TONIC
+								
+								</h2>
+							<p>Ингредиенты: молочная кислота, 
+								гликолевая кислота, цитрусовые биофлавоноиды (рутин), экстракт брокколи (сульфорафан), экстракт листьев алоэ барбаденсис, фермент lactobaccillus arizonensis(постбиотик) 
+								рН = 3.5  Действие: высококонцентрированный тоник 
+								для регулярного эпидермального обновления и поддержания равновесия микробиоты кожи. Этот инновационный продукт обеспечивает активность собственного клеточного 
+								механизма профилактики и купирования окислительного стресса. Поддерживает процессы внутриклеточной детоксикации 
+								и метаболизма. Курсовое применение тоника положительно влияет на здоровье сосудистой системы: укрепляет 
+								капиллярные стенки, повышая их упругость и тонус. Как следствие, эффективно снимает отеки. Обладает яркими антибактериальными, противовоспалительными и заживляющими свойствами. Способствует сужению 
+								расширенных пор и регуляции выработки кожного сала. Обеспечивает высокий уровень гидробаланса и здоровое сияние кожи 
+								в течение всего дня. Необходимо включать тоник в домашний уход на подготовительном этапе 
+								в комплексе с другими специальными 
+								препаратами MESOLAB®. 
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>4020.00руб/1880.00руб</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Тонизация</h5>
+							<div class="aim">
+								<h1 class="arti">TFSS</h1>
+								<img src="images/cards/tonis/1.png" height="170px" alt="">
+								<h6 class="ml">Флакон с дозат. 700 мл,
+									флакон со спреем 250 мл
+									</h6>
+							</div>
+							<h2>ТОНИК ДЛЯ 
+								ЧУВСТВИТЕЛЬНОЙ 
+								КОЖИ
+								TONIC FOR
+								A SENSITIVE
+								SKIN
+								
+								</h2>
+							<p>Ингредиенты: гидролат василька, 
+								экстракт коньяк-маннана, экстракт семени льна, гиалуроновая кислота
+								Действие: деликатный тоник для самой 
+								нежной и чувствительной кожи. Мгновенно восстанавливает гидролипидный баланс кожи после умывания, снимает раздражение, создает комфортные ощущения. 
+								Использование тоника значительно снижает аллергические реакции кожи. Идеальный продукт для сухой кожи с мелкоморщинистым типом старения или склонностью к куперозу. Рекомендуется к обязательному применению для любого типа кожи в реабилитационный период после травмирующих 
+								процедур: пилинги, чистки, аппаратные методики, пластические операции. 
+								Применение: после очищения протереть кожу лица, шеи и области декольте ватным диском, смоченным тоником.
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>4600.00руб/2200.00руб</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Тонизация</h5>
+							<div class="aim">
+								<h1 class="arti">RT</h1>
+								<img src="images/cards/tonis/1.png" height="170px" alt="">
+								<h6 class="ml">Флакон с дозат. 700 мл,
+									флакон со спреем 250 мл
+									</h6>
+							</div>
+							<h2>ОСВЕЖАЮЩИЙ 
+								ТОНИК
+								<br>
+								REFRESHING
+								TONIС
+								
+								</h2>
+							<p>
+								Ингредиенты: экстракт спирулины
+								Действие: активный увлажняющий тоник с высоким содержанием экстракта спирулины обеспечивает доставку микроэлементов, минералов, аминокислот и витаминов, 
+								необходимых для здоровья, красоты и молодости Вашей кожи. Эффективно выводит токсины и восстанавливает скорость метаболических процессов. Способствует качественному обновлению эпидермиса. Тоник 
+								подходит для всех типов кожи.
+								Применение: после очищения протереть кожу лица, шеи и области декольте ватным диском, смоченным тоником. В домашнем уходе с помощью спрея оросить лосьоном 
+								кожу лица, шеи, области декольте и др. 
+								участков, затем деликатно протереть ватным диском и оросить еще раз до полного впитывания.
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>3000.00руб/1600.00руб</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+								Пусто
+							</div>
+						</div>
+				
+					</div>
+				</div>
+
+				<div class="slider__item">
+					<div class="all-2">
+						<div class="card_fon">
+							<div class="card">
+								Пусто
+							</div>
+						</div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+				
+					</div>
+				</div>
+
+			  </div>
+			</div>
+			<a class="slider__control slider__control_prev" href="#" role="button"></a>
+			<a class="slider__control slider__control_next" href="#" role="button"></a>
+		  </div>
+		
+		  <script>
+			'use strict';
+			var slideShow = (function () {
+			  return function (selector, config) {
+				var
+				  _slider = document.querySelector(selector), // основный элемент блока
+				  _sliderContainer = _slider.querySelector('.slider__items'), // контейнер для .slider-item
+				  _sliderItems = _slider.querySelectorAll('.slider__item'), // коллекция .slider-item
+				  _sliderControls = _slider.querySelectorAll('.slider__control'), // элементы управления
+				  _currentPosition = 0, // позиция левого активного элемента
+				  _transformValue = 0, // значение транфсофрмации .slider_wrapper
+				  _transformStep = 100, // величина шага (для трансформации)
+				  _itemsArray = [], // массив элементов
+				  _timerId,
+				  _indicatorItems,
+				  _indicatorIndex = 0,
+				  _indicatorIndexMax = _sliderItems.length - 1,
+				  _stepTouch = 50,
+				  _config = {
+					isAutoplay: false, // автоматическая смена слайдов
+					directionAutoplay: 'next', // направление смены слайдов
+					delayAutoplay: 1700000, // интервал между автоматической сменой слайдов
+					isPauseOnHover: true // устанавливать ли паузу при поднесении курсора к слайдеру
+				  };
+		
+				// настройка конфигурации слайдера в зависимости от полученных ключей
+				for (var key in config) {
+				  if (key in _config) {
+					_config[key] = config[key];
+				  }
+				}
+		
+				// наполнение массива _itemsArray
+				for (var i = 0, length = _sliderItems.length; i < length; i++) {
+				  _itemsArray.push({ item: _sliderItems[i], position: i, transform: 0 });
+				}
+		
+				// переменная position содержит методы с помощью которой можно получить минимальный и максимальный индекс элемента, а также соответствующему этому индексу позицию
+				var position = {
+				  getItemIndex: function (mode) {
+					var index = 0;
+					for (var i = 0, length = _itemsArray.length; i < length; i++) {
+					  if ((_itemsArray[i].position < _itemsArray[index].position && mode === 'min') || (_itemsArray[i].position > _itemsArray[index].position && mode === 'max')) {
+						index = i;
+					  }
+					}
+					return index;
+				  },
+				  getItemPosition: function (mode) {
+					return _itemsArray[position.getItemIndex(mode)].position;
+				  }
+				};
+		
+				// функция, выполняющая смену слайда в указанном направлении
+				var _move = function (direction) {
+				  var nextItem, currentIndicator = _indicatorIndex;;
+				  if (direction === 'next') {
+					_currentPosition++;
+					if (_currentPosition > position.getItemPosition('max')) {
+					  nextItem = position.getItemIndex('min');
+					  _itemsArray[nextItem].position = position.getItemPosition('max') + 1;
+					  _itemsArray[nextItem].transform += _itemsArray.length * 100;
+					  _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+					}
+					_transformValue -= _transformStep;
+					_indicatorIndex = _indicatorIndex + 1;
+					if (_indicatorIndex > _indicatorIndexMax) {
+					  _indicatorIndex = 0;
+					}
+				  } else {
+					_currentPosition--;
+					if (_currentPosition < position.getItemPosition('min')) {
+					  nextItem = position.getItemIndex('max');
+					  _itemsArray[nextItem].position = position.getItemPosition('min') - 1;
+					  _itemsArray[nextItem].transform -= _itemsArray.length * 100;
+					  _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+					}
+					_transformValue += _transformStep;
+					_indicatorIndex = _indicatorIndex - 1;
+					if (_indicatorIndex < 0) {
+					  _indicatorIndex = _indicatorIndexMax;
+					}
+				  }
+				  _sliderContainer.style.transform = 'translateX(' + _transformValue + '%)';
+				  _indicatorItems[currentIndicator].classList.remove('active');
+				  _indicatorItems[_indicatorIndex].classList.add('active');
+				};
+		
+				// функция, осуществляющая переход к слайду по его порядковому номеру
+				var _moveTo = function (index) {
+				  var i = 0, direction = (index > _indicatorIndex) ? 'next' : 'prev';
+				  while (index !== _indicatorIndex && i <= _indicatorIndexMax) {
+					_move(direction);
+					i++;
+				  }
+				};
+		
+				// функция для запуска автоматической смены слайдов через промежутки времени
+				var _startAutoplay = function () {
+				  if (!_config.isAutoplay) {
+					return;
+				  }
+				  _stopAutoplay();
+				  _timerId = setInterval(function () {
+					_move(_config.directionAutoplay);
+				  }, _config.delayAutoplay);
+				};
+		
+				// функция, отключающая автоматическую смену слайдов
+				var _stopAutoplay = function () {
+				  clearInterval(_timerId);
+				};
+		
+				// функция, добавляющая индикаторы к слайдеру
+				var _addIndicators = function () {
+				  var indicatorsContainer = document.createElement('ol');
+				  indicatorsContainer.classList.add('slider__indicators');
+				  for (var i = 0, length = _sliderItems.length; i < length; i++) {
+					var sliderIndicatorsItem = document.createElement('li');
+					if (i === 0) {
+					  sliderIndicatorsItem.classList.add('active');
+					}
+					sliderIndicatorsItem.setAttribute("data-slide-to", i);
+					indicatorsContainer.appendChild(sliderIndicatorsItem);
+				  }
+				  _slider.appendChild(indicatorsContainer);
+				  _indicatorItems = _slider.querySelectorAll('.slider__indicators > li')
+				};
+		
+				var _isTouchDevice = function () {
+				  return !!('ontouchstart' in window || navigator.maxTouchPoints);
+				};
+		
+				// функция, осуществляющая установку обработчиков для событий 
+				var _setUpListeners = function () {
+				  var _startX = 0;
+				  if (_isTouchDevice()) {
+					_slider.addEventListener('touchstart', function (e) {
+					  _startX = e.changedTouches[0].clientX;
+					  _startAutoplay();
+					});
+					_slider.addEventListener('touchend', function (e) {
+					  var
+						_endX = e.changedTouches[0].clientX,
+						_deltaX = _endX - _startX;
+					  if (_deltaX > _stepTouch) {
+						_move('prev');
+					  } else if (_deltaX < -_stepTouch) {
+						_move('next');
+					  }
+					  _startAutoplay();
+					});
+				  } else {
+					for (var i = 0, length = _sliderControls.length; i < length; i++) {
+					  _sliderControls[i].classList.add('slider__control_show');
+					}
+				  }
+				  _slider.addEventListener('click', function (e) {
+					if (e.target.classList.contains('slider__control')) {
+					  e.preventDefault();
+					  _move(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+					  _startAutoplay();
+					} else if (e.target.getAttribute('data-slide-to')) {
+					  e.preventDefault();
+					  _moveTo(parseInt(e.target.getAttribute('data-slide-to')));
+					  _startAutoplay();
+					}
+				  });
+				  document.addEventListener('visibilitychange', function () {
+					if (document.visibilityState === "hidden") {
+					  _stopAutoplay();
+					} else {
+					  _startAutoplay();
+					}
+				  }, false);
+				  if (_config.isPauseOnHover && _config.isAutoplay) {
+					_slider.addEventListener('mouseenter', function () {
+					  _stopAutoplay();
+					});
+					_slider.addEventListener('mouseleave', function () {
+					  _startAutoplay();
+					});
+				  }
+				};
+		
+				// добавляем индикаторы к слайдеру
+				_addIndicators();
+				// установливаем обработчики для событий
+				_setUpListeners();
+				// запускаем автоматическую смену слайдов, если установлен соответствующий ключ
+				_startAutoplay();
+		
+				return {
+				  // метод слайдера для перехода к следующему слайду
+				  next: function () {
+					_move('next');
+				  },
+				  // метод слайдера для перехода к предыдущему слайду          
+				  left: function () {
+					_move('prev');
+				  },
+				  // метод отключающий автоматическую смену слайдов
+				  stop: function () {
+					_config.isAutoplay = false;
+					_stopAutoplay();
+				  },
+				  // метод запускающий автоматическую смену слайдов
+				  cycle: function () {
+					_config.isAutoplay = true;
+					_startAutoplay();
+				  }
+				}
+			  }
+			}());
+		
+			slideShow('.slider2', {
+			  isAutoplay: true
+			});
+		  </script>
+		  
+		<!--Слайдер-->
+
+
+	</div>
+</section>
+
+
+<h3 class="ton">ИННОВАЦИОННЫЕ СЫВОРОТКИ</h3> 
+
+<section class="slider_block">
+	<div class="container">
+
+		<!--Слайдер-->
+
+<style>
+			
+/* стили основного контейнера слайдера */
+.slider3 {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper3 {
+  position: relative;
+  height: 1309px;
+  overflow: hidden;
+  
+  
+}
+
+/* стили для контейнера слайдов */
+.slider__items,.slider__items2 {
+  display: flex;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+/* стили для слайдов */
+.slider__item,.slider__item2 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control,.slider__control2 {
+  position: absolute;
+  top: 32%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control_show,.slider__control_show2 {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control2:hover,
+.slider__control:focus,
+.slider__control2:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_prev,.slider__control_prev2 {
+  left: 0;
+}
+
+.slider__control_next,.slider__control_next2 {
+  right: 0;
+}
+
+.slider__control::before,
+.slider__control2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before,
+.slider__control_prev2::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before,
+.slider__control_next2::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+.slider__indicators,.slider__indicators2 {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider__indicators li,
+.slider__indicators2 li {
+	display: none;
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.slider__indicators li.active,
+.slider__indicators2 li.active {
+  background-color: #fff;
+}
+
+/* для стилизации текущего слайдера */
+.img-fluid,.img-fluid2 {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+</style>
+	   
+		<div class="slider3">
+			<div class="slider__wrapper3">
+			  <div class="slider__items">
+				<div class="slider__item">
+					<div class="all-3">
+						<div class="card_fon">
+						<div class="card">
+						 <h5>Инновационные сыворотки</h5>
+						<div class="aim">
+							<h1 class="arti">BS</h1>
+							<img src="images/cards/inov/inov1.jpeg" height="170px" alt="">
+							<h6 class="ml">Флакон с пипеткой 
+								50 мл
+							 <br> 30 мл<br> 15 мл
+								
+								</h6>
+						</div>
+						<h2>СЫВОРОТКА - СИЯНИЕ
+							<br>BRILLIANCE SERUM
+
+							</h2>
+						<p>Ингредиенты: экстракт из красных 
+							морских водорослей Eucheuma cottonii (галактаны), экстракт фиалки трехцветной (олигосахариды), низкомолекулярная и высокомолекулярная гиалуроновая кислота (ГК)    Действие: Инновационная сыворотка для восстановления и поддержания тонуса, упругости и природного сияния кожи. Синергия олигосахаридов с уникальной системой 3D-увлажнения: поверхностное, глубокое и внутриклеточное стимулирует 
+							синтез белка аквапорин-3 и способствует циркуляции воды от дермы к эпидермису. 
+							Заметно сокращает признаки старения. 
+							Механизм воздействия: значительно ограничивает индуцированное стрессом ускоренное укорачивание теломер на 65%, сохраняя способность клеток к репликации. Сыворотка-сияние существенно замедляет метаболическое и ядерное старение клеток кожи и способствует  омоложению: разглаживает 
+							морщины, реструктурирует и уплотняет дерму.   Применение в профессиональных уходах:
+							несколько капель сыворотки (примерно 1,5-2 мл) нанести на очищенную кожу лица, 
+							шеи, декольте перед массажем, маской или на завершающем этапе процедуры перед  кремом. В аппаратных методиках сыворотку наносят перед проводящим гелем.
+							Применение в домашнем уходе: нанести несколько капель сыворотки на очищенную кожу лица, шеи, декольте или локальной 
+зоны коррекции утром и/или вечером. 
+Минимальный курс составляет 28 – 56 дней.
+
+							
+							</p>
+						<span>Подробнее...</span>
+						<div class="price_button">
+							<h3>4200.00/
+								2600.00 руб.
+								<br>2000.00 руб.
+								</h3>
+							<h2 class="block11">заказать</h2>
+						</div>
+						</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">ASS</h1>
+								<img src="images/cards/inov/inov1.jpeg" height="170px" alt="">
+								<h6 class="ml">Флакон с пипеткой 
+									50 мл
+								 <br> 30 мл<br> 15 мл
+							</div>
+							<h2>СЫВОРОТКА СЕБОРЕГУЛИРУЮЩАЯ
+								<br>ACNE-STOP
+								SERUM
+								
+								
+								</h2>
+							<p>Активные ингредиенты: олеаноловая 
+								и нордигидрогваяретовая (НДГК) кислоты в составе специального  геля, фенольные кислоты из таволги вязолистной, низкомолекулярная и высокомолекулярная гиалуроновая кислота (ГК)
+								Действие:  сыворотка предназначена для жирной и проблемной кожи, склонной к акне. Воздействует на основные причины развития и проявления акне: размножение бактерий, повышенное сало выделение, локальное воспаление волосяного фолликула, гиперкератоз. 
+								Олеаноловая кислота ингибирует синтез фермента (5-альфа-редуктазы), . НДГК регулирует рост клеток кожи, предотвращая гиперкератоз и воспаление. Осмотический гель и низкомолекулярная гиалуроновая кислота обеспечивают компонентам сыворотки высокую 
+								 доступность. Фенольные кислоты из таволги вязолистной активизируют выработку собственных антимикробных пептидов , снижают 
+								проявление акне. Сыворотка оказывает успокаивающее действие на воспаленную кожу. Радикально устраняет «черные точки». 
+								Нормализует липидный баланс и предотвращает гиперкератоз.
+								Применение в профессиональных уходах: несколько капель сыворотки (примерно 1,5-2 мл) нанести на очищенную кожу лица, шеи, декольте перед маской или на завершающем этапе процедуры перед кремом. 
+								Применение в домашнем уходе: нанести несколько капель сыворотки на очищенную кожу лица, декольте или локальной зоны 
+								коррекции утром и/или вечером. 
+								Минимальный курс составляет 28 – 56 дней.
+								
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>4200.00/
+									2600.00 руб.
+									<br>2000.00 руб.</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">DAS</h1>
+								<img src="images/cards/inov/inov1.jpeg" height="170px" alt="">
+								<h6 class="ml">Флакон с пипеткой 
+									50 мл
+								 <br> 30 мл<br> 15 мл
+									
+									</h6>
+							</div>
+							<h2>СЫВОРОТКА 
+								ДЕТОКС - АНТИСТРЕСС
+								
+								<br>DETOX ANTISTRESS SERUM
+
+								
+								</h2>
+							<p>Ингредиенты: гидролизованный 
+								экстракт дрожжей Candida saitoana, 
+								морские экзополисахариды, низкомолекулярная и высокомолекулярная гиалуроновая кислота (ГК) 
+								Действие: Активная сыворотка поддерживает процессы аутофагии кожи, обеспечвая регулярный внутриклеточный детокс. 
+								Рекомендуется использовать во всех эстетических программах 
+								как базовый продукт для поддержания 
+								иммунитета и улучшения здоровья кожи. 
+								Повышение барьерной функции помогает противостоять влиянию негативных эндогенных и экзогенных факторов.Защищает ткани от фото- и хроностарения. При регулярном курсовом применении в домашнем уходе способствует осветлению и выравниванию тона кожи. При склонности к солнечной и возрастной гиперпигментации рекомендуется регулярное использование, особенно в весеннелетний период. Сыворотка глубоко увлажняет ткани и восстанавливает природное 
+								сияние кожи. Морские экзополисахариды в 
+								синергии с ГК притягивают и удерживают 
+								огромное количество молекул воды в верхних слоях эпидермиса. Такой высокий 
+								уровень гидробаланса, (словно губка, 
+								насыщенная водой) обеспечивает продолжительный лифтинговый эффект в течение 24-х часов
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>4200.00/
+									2600.00 руб.
+									<br>2000.00 руб.</h3></h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">PS</h1>
+								<img src="images/cards/inov/inov1.jpeg" height="170px" alt="">
+								<h6 class="ml">Флакон с пипеткой 
+									50 мл
+								 <br> 30 мл<br> 15 мл
+									</h6>
+							</div>
+							<h2>СЫВОРОТКА 
+								ПЕПТИДНАЯ
+								
+								<br>PEPTIDE
+								SERUM
+								
+								
+								</h2>
+							<p>Ингредиенты: экстракт спирулины, пальмитоил тетрапептид-38, низкомолекулярная и высокомолекулярная гиалуроновая кислота (ГК)   Действие: Сыворотка активно 
+								увлажняет, разглаживает и обновляет кожу. Мощный пептид в синергии с низкомолекулярной ГК увеличивает синтез 
+								6 основных компонентов матрикса кожи и 
+								дермоэпидермального соединения: коллагена I, III, IV типов, HSP47, собственной 
+								гиалуроновой кислоты, фибронектина, 
+								ламинина-5.Способствует значительному сокращению морщин от 30% до 100%. Особенно выраженный эффект разглаживания и обновления кожи наблюдается на области лба, вокруг глаз, и вокруг губ. Экстракт спирулины  насыщает кожу микроэлементами, аминокислотами и витаминами. Применение сыворотки уплотняет кожу и способствует яркому омоложению. При раннем появлении мелких морщин в зонах повышенной 
+								мимической активности рекомендуется 
+								 применение сыворотки короткими курсами, начиная с 25 лет. В качестве 
+								продукта anti-age сыворотку назначают с 
+								35 лет. Пептидная сыворотка – идеальный 
+								продукт в курсе домашнего назначения 
+								после инъекционной, лазерной и RF-терапии для поддержания и пролонгации достигнутых эффектов.  
+								Применение в домашнем уходе: нанести 
+								несколько капель сыворотки на очищенную 
+								кожу лица, шеи, декольте или локальной 
+								зоны коррекции утром и/или вечером. 
+								Минимальный курс составляет 28 – 56 дней.
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>4200.00/
+									2600.00 руб.
+									<br>2000.00 руб.</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+							 <h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">AS</h1>
+								<img src="images/cards/inov/inov1.jpeg" height="170px" alt="">
+								<h6 class="ml">Флакон с пипеткой 
+									50 мл
+								 <br> 30 мл<br> 15 мл
+									</h6>
+							</div>
+							<h2 class="card5">ГИАЛУРОНОВАЯ СЫВОРОТКА ДЛЯ ЧУВСТВИТ. КОЖИ
+
+								ANTICUPEROSIS SERUM
+
+								
+								</h2>
+							<p>
+								Ингредиенты: гель алоэ вера, 
+экстракт конского каштана, экстракт иглицы, экстракт центеллы азиатской, экстракт 
+виноградных листьев, экстракт ивы, экстракт гречихи, троксерутин, экстракт гамамелиса, экстракт хвоща, низкомолекулярная и высокомолекулярная гиалуроновая 
+кислота (ГК), аллантоин, хлорофилл
+Действие: высококонцентрированная 
+сыворотка для кожи с ослабленной микроциркуляцией и склонностью к раздражениям, воспалениям, покраснениям и телеангиэктазии. Оказывает венотонизирующее, ангиопротективное, противовоспалительное, противоотечное и антиоксидантное действие. Богатейший состав сыворотки из экстрактов, насыщенных биофлавоноидами в синергии с ГК, оказывает позитивный эффект на капиллярную систему и обеспечивает восстановление здоровья, природного сияния и цвета кожи:
+- снижает капиллярную проницаемость
+- укрепляет дерма-эпидермальное 
+соединение
+- восстанавливает скорость и качество 
+метаболических процессов
+- успокаивает и глубоко увлажняет кожу
+- восстанавливает барьерную функцию 
+кожи
+Рекомендуется для направленных на устранение купероза и для  интенсивного ухода за кожей периорбитальной области: отечности и темных кругов. 
+Применение в домашнем уходе: нанести 
+несколько капель сыворотки на очищенную 
+кожу лица, шеи, декольте или локальной 
+зоны коррекции утром и/или вечером. 
+Минимальный курс составляет 28 – 56 дней.
+
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>4200.00/
+									2600.00 руб.
+									<br>2000.00 руб</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+								<h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">SR</h1>
+								<img src="images/cards/inov/inov2.png" height="170px" alt="">
+								<h6 class="ml">Банка 30 капсул
+									</h6>
+							</div>
+							<h2>СЫВОРОТКА
+								С РЕТИНОЛОМ
+								
+								
+								<br>RETINOL
+								SERUM
+								
+								
+								
+								</h2>
+							<p>Ингредиенты: ретинол, лецитин, 
+								глицин сои, гликолипиды
+								Действие: мультифункциональная сыворотка  для применения в терапии акне и гиперкератоза,  возрастных изменений и гиперпигментации, а также для выравнивая тона и восстановления природного сияния 
+								кожи. Ретинол (витамин А в стабильной 
+								форме) способствует утончению рогового 
+								слоя и быстрому обновлению эпидермиса. 
+								Регулярное применение сыворотки обеспечивает устойчивый омолаживающий 
+								эффект: стимулирует синтез коллагена и 
+								других компонентов матрикса дермы, ингибирует действие металлопротеиназ, ускоряет процессы регенерации, способствует 
+								уменьшению количества и глубины морщин. 
+								Ингибирует процессы гиперпигментации и 
+								действие свободных радикалов, повышая 
+								иммунитет кожи и препятствуя фотостарению. Сыворотка благотворно действует 
+								на состояние страдающей от акне кожи: 
+								регулирует секрецию сальных желез и 
+								стимулирует качественное и своевременное клеточное обновление. Является обязательным назначением в курсах химических 
+								пилингов, особенно в предпилинговом 
+								уходе.
+								Применение в  домашнем  уходе. Аккуратно выдавить содержимое капсулы на кончики пальцев, распределить сыворотку на предварительно очищенное лицо, шею, область вокруг глаз или другую область коррекции. Рекомендуется использовать в вечернее время, длительность 
+								курса 6 - 8 недель
+								
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>6000 руб.</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+				
+					</div>
+				</div>
+
+				<div class="slider__item">
+					<div class="all-3">
+						<div class="card_fon">
+							<div class="card">
+								<h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">ARS</h1>
+								<img src="images/cards/inov/inov2.png" height="170px" alt="">
+								<h6 class="ml">Банка 30 капсул
+									</h6>
+							</div>
+							<h2>СЫВОРОТКА
+								С АРГИРЕЛИНОМ
+								
+								
+								
+								<br>ARGIRELINE
+								SERUM
+								
+								
+								
+								
+								</h2>
+							<p>Ингредиенты: ацетилгексапептид 
+								8 (аргирелин), лецитин, глицин сои, гликолипиды Действие: активная сыворотка-миорелаксант №1 для наружного применения. 
+								Аргирелин, входящий в состав препарата, 
+								синтетический белковый пептид, состоящий из 6 аминокислот.Блестящая альтернатива инъекциям ботулотоксина,  Также эффективно пролонгирует действие препаратов с ботулотоксином, увеличивая промежутки между инъекциями. В отличие от ботулотоксина, не оказывает 
+								заметного воздействия на мимику лица, 
+								обеспечивая накопительный эффект. 
+								Устраняет  причину возникновения 
+								мимических морщин, аргирелин уменьшает 
+								глубину морщин на 27% за 30 дней применения. 
+								В синергии с лецитином, глицином сои и 
+								гликолипидами эффективно увлажняет и 
+								питает зрелую кожу.  Помимо уменьшения 
+								 мимических морщин на лбу, 
+								периорбитальной и периоральной областей, 
+								обеспечивает устойчивый лифтинг кожи в 
+								течение всего дня. Является праймером (основой) для макияжа.
+								Применение в домашнем уходе:  аккуратно выдавить содержимое капсулы на кончики пальцев, распределить сыворотку на предварительно очищенное 
+								лицо, акцентируя на зонах мимических 
+								морщин. 
+								Рекомендуется использовать утром. 
+								Длительность курса и перерывы назначает 
+								косметолог. В зависимости от активности 
+								мимики, возможно локальное назначение.
+								
+								
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>6000 руб.</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon">
+							<div class="card">
+								<h5>Иновационные сыворотки</h5>
+							<div class="aim">
+								<h1 class="arti">BRS</h1>
+								<img src="images/cards/inov/inov2.png" height="170px" alt="">
+								<h6 class="ml">Банка 30 капсул
+									</h6>
+							</div>
+							<h2>СЫВОРОТКА
+								ДЛЯ ИДЕАЛЬНОГО
+								ТОНА КОЖИ
+								
+								
+								
+								
+								BRIGHTENING
+								SERUM
+								
+								
+								
+								
+								
+								</h2>
+							<p>Ингредиенты: морские экзополисахариды, диметилметоксихроманол 
+								(DimethylmethoxyChromanol), глицин сои, 
+								гликолипиды
+								Действие: биотехнологический экстракт, 
+								входящий в состав осветляющей сыворотки, активно воздействует на различные 
+								стадии синтеза меланина и его накопление 
+								в коже для комплексного и эффективного 
+								контроля пигментации. Восстанавливает 
+								сияние кожи и сокращает видимость 
+								участков гиперпигментации. Защита 
+								против оксидативного стресса, ксенобиотиков и активных форм кислорода. Высокая антиоксидантная активность диметилметоксихроманола позволяет  защищать липиды от перекисного 
+								окисления и поддерживать высокий уровень увлажнения и эластичности кожи. 
+								Сыворотка обеспечивает устойчивый лифтинг кожи в течение всего дня. Является великолепным праймером (основой) для макияжа.
+								Применение в домашнем уходе: распределить сыворотку на предварительно очищенное лицо, 
+								шею, область вокруг глаз, акцентируя на 
+								зоны гиперпигментации. Рекомендуется 
+								использовать утром. Длительность курса 
+								и перерывы назначает косметолог.
+								
+								
+								
+								
+								</p>
+							<span>Подробнее...</span>
+							<div class="price_button">
+								<h3>6000 руб.</h3>
+								<h2 class="block11">заказать</h2>
+							</div>
+							</div>
+						</div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+						<div class="card_fon"></div>
+				
+					</div>
+				</div>
+
+			  </div>
+			</div>
+			<a class="slider__control slider__control_prev" href="#" role="button"></a>
+			<a class="slider__control slider__control_next" href="#" role="button"></a>
+		  </div>
+		
+		  <script>
+			'use strict';
+			var slideShow = (function () {
+			  return function (selector, config) {
+				var
+				  _slider = document.querySelector(selector), // основный элемент блока
+				  _sliderContainer = _slider.querySelector('.slider__items'), // контейнер для .slider-item
+				  _sliderItems = _slider.querySelectorAll('.slider__item'), // коллекция .slider-item
+				  _sliderControls = _slider.querySelectorAll('.slider__control'), // элементы управления
+				  _currentPosition = 0, // позиция левого активного элемента
+				  _transformValue = 0, // значение транфсофрмации .slider_wrapper
+				  _transformStep = 100, // величина шага (для трансформации)
+				  _itemsArray = [], // массив элементов
+				  _timerId,
+				  _indicatorItems,
+				  _indicatorIndex = 0,
+				  _indicatorIndexMax = _sliderItems.length - 1,
+				  _stepTouch = 50,
+				  _config = {
+					isAutoplay: false, // автоматическая смена слайдов
+					directionAutoplay: 'next', // направление смены слайдов
+					delayAutoplay: 1700000, // интервал между автоматической сменой слайдов
+					isPauseOnHover: true // устанавливать ли паузу при поднесении курсора к слайдеру
+				  };
+		
+				// настройка конфигурации слайдера в зависимости от полученных ключей
+				for (var key in config) {
+				  if (key in _config) {
+					_config[key] = config[key];
+				  }
+				}
+		
+				// наполнение массива _itemsArray
+				for (var i = 0, length = _sliderItems.length; i < length; i++) {
+				  _itemsArray.push({ item: _sliderItems[i], position: i, transform: 0 });
+				}
+		
+				// переменная position содержит методы с помощью которой можно получить минимальный и максимальный индекс элемента, а также соответствующему этому индексу позицию
+				var position = {
+				  getItemIndex: function (mode) {
+					var index = 0;
+					for (var i = 0, length = _itemsArray.length; i < length; i++) {
+					  if ((_itemsArray[i].position < _itemsArray[index].position && mode === 'min') || (_itemsArray[i].position > _itemsArray[index].position && mode === 'max')) {
+						index = i;
+					  }
+					}
+					return index;
+				  },
+				  getItemPosition: function (mode) {
+					return _itemsArray[position.getItemIndex(mode)].position;
+				  }
+				};
+		
+				// функция, выполняющая смену слайда в указанном направлении
+				var _move = function (direction) {
+				  var nextItem, currentIndicator = _indicatorIndex;;
+				  if (direction === 'next') {
+					_currentPosition++;
+					if (_currentPosition > position.getItemPosition('max')) {
+					  nextItem = position.getItemIndex('min');
+					  _itemsArray[nextItem].position = position.getItemPosition('max') + 1;
+					  _itemsArray[nextItem].transform += _itemsArray.length * 100;
+					  _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+					}
+					_transformValue -= _transformStep;
+					_indicatorIndex = _indicatorIndex + 1;
+					if (_indicatorIndex > _indicatorIndexMax) {
+					  _indicatorIndex = 0;
+					}
+				  } else {
+					_currentPosition--;
+					if (_currentPosition < position.getItemPosition('min')) {
+					  nextItem = position.getItemIndex('max');
+					  _itemsArray[nextItem].position = position.getItemPosition('min') - 1;
+					  _itemsArray[nextItem].transform -= _itemsArray.length * 100;
+					  _itemsArray[nextItem].item.style.transform = 'translateX(' + _itemsArray[nextItem].transform + '%)';
+					}
+					_transformValue += _transformStep;
+					_indicatorIndex = _indicatorIndex - 1;
+					if (_indicatorIndex < 0) {
+					  _indicatorIndex = _indicatorIndexMax;
+					}
+				  }
+				  _sliderContainer.style.transform = 'translateX(' + _transformValue + '%)';
+				  _indicatorItems[currentIndicator].classList.remove('active');
+				  _indicatorItems[_indicatorIndex].classList.add('active');
+				};
+		
+				// функция, осуществляющая переход к слайду по его порядковому номеру
+				var _moveTo = function (index) {
+				  var i = 0, direction = (index > _indicatorIndex) ? 'next' : 'prev';
+				  while (index !== _indicatorIndex && i <= _indicatorIndexMax) {
+					_move(direction);
+					i++;
+				  }
+				};
+		
+				// функция для запуска автоматической смены слайдов через промежутки времени
+				var _startAutoplay = function () {
+				  if (!_config.isAutoplay) {
+					return;
+				  }
+				  _stopAutoplay();
+				  _timerId = setInterval(function () {
+					_move(_config.directionAutoplay);
+				  }, _config.delayAutoplay);
+				};
+		
+				// функция, отключающая автоматическую смену слайдов
+				var _stopAutoplay = function () {
+				  clearInterval(_timerId);
+				};
+		
+				// функция, добавляющая индикаторы к слайдеру
+				var _addIndicators = function () {
+				  var indicatorsContainer = document.createElement('ol');
+				  indicatorsContainer.classList.add('slider__indicators');
+				  for (var i = 0, length = _sliderItems.length; i < length; i++) {
+					var sliderIndicatorsItem = document.createElement('li');
+					if (i === 0) {
+					  sliderIndicatorsItem.classList.add('active');
+					}
+					sliderIndicatorsItem.setAttribute("data-slide-to", i);
+					indicatorsContainer.appendChild(sliderIndicatorsItem);
+				  }
+				  _slider.appendChild(indicatorsContainer);
+				  _indicatorItems = _slider.querySelectorAll('.slider__indicators > li')
+				};
+		
+				var _isTouchDevice = function () {
+				  return !!('ontouchstart' in window || navigator.maxTouchPoints);
+				};
+		
+				// функция, осуществляющая установку обработчиков для событий 
+				var _setUpListeners = function () {
+				  var _startX = 0;
+				  if (_isTouchDevice()) {
+					_slider.addEventListener('touchstart', function (e) {
+					  _startX = e.changedTouches[0].clientX;
+					  _startAutoplay();
+					});
+					_slider.addEventListener('touchend', function (e) {
+					  var
+						_endX = e.changedTouches[0].clientX,
+						_deltaX = _endX - _startX;
+					  if (_deltaX > _stepTouch) {
+						_move('prev');
+					  } else if (_deltaX < -_stepTouch) {
+						_move('next');
+					  }
+					  _startAutoplay();
+					});
+				  } else {
+					for (var i = 0, length = _sliderControls.length; i < length; i++) {
+					  _sliderControls[i].classList.add('slider__control_show');
+					}
+				  }
+				  _slider.addEventListener('click', function (e) {
+					if (e.target.classList.contains('slider__control')) {
+					  e.preventDefault();
+					  _move(e.target.classList.contains('slider__control_next') ? 'next' : 'prev');
+					  _startAutoplay();
+					} else if (e.target.getAttribute('data-slide-to')) {
+					  e.preventDefault();
+					  _moveTo(parseInt(e.target.getAttribute('data-slide-to')));
+					  _startAutoplay();
+					}
+				  });
+				  document.addEventListener('visibilitychange', function () {
+					if (document.visibilityState === "hidden") {
+					  _stopAutoplay();
+					} else {
+					  _startAutoplay();
+					}
+				  }, false);
+				  if (_config.isPauseOnHover && _config.isAutoplay) {
+					_slider.addEventListener('mouseenter', function () {
+					  _stopAutoplay();
+					});
+					_slider.addEventListener('mouseleave', function () {
+					  _startAutoplay();
+					});
+				  }
+				};
+		
+				// добавляем индикаторы к слайдеру
+				_addIndicators();
+				// установливаем обработчики для событий
+				_setUpListeners();
+				// запускаем автоматическую смену слайдов, если установлен соответствующий ключ
+				_startAutoplay();
+		
+				return {
+				  // метод слайдера для перехода к следующему слайду
+				  next: function () {
+					_move('next');
+				  },
+				  // метод слайдера для перехода к предыдущему слайду          
+				  left: function () {
+					_move('prev');
+				  },
+				  // метод отключающий автоматическую смену слайдов
+				  stop: function () {
+					_config.isAutoplay = false;
+					_stopAutoplay();
+				  },
+				  // метод запускающий автоматическую смену слайдов
+				  cycle: function () {
+					_config.isAutoplay = true;
+					_startAutoplay();
+				  }
+				}
+			  }
+			}());
+		
+			slideShow('.slider3', {
+			  isAutoplay: true
+			});
+		  </script>
+		  
+		<!--Слайдер-->
+
+
+	</div>
+</section>
+
+</section>
+
+
+<section class="news" id="news">
+	<h1>Новости</h1>
+	 <div class="news_main">
+		<div class="news1">
+			<div class="img_news1"></div>
+			<div class="txt_news1">
+				<p>У ПАЦИЕНТОВ С АКНЕ СНИЖЕН УРОВЕНЬ ВИТАМИНА D</p>
+				<p>Какова связь между витамином D и акне? Оказывается, себоциты экспрессируют рецепторы к данному витамину — VDR, что подтверждается исследованиями, демонстрирующими способность витамина D влиять на функцию и физиологию себоцитов.</p>
+				<p class="bmod1">Подробнее</p>
+			</div>
+		</div>
+		<div class="news2">
+			<div class="img_news2"></div>
+			<div class="txt_news2">
+				<p>СОЛНЦЕЗАЩИТНЫЕ И УВЛ. СРЕДСТВА:правила использования</p>
+				<p>Известно, для того чтобы средство с солнцезащитными фильтрами давало ту степень защиты, которая указана на его этикетке, оно должно наноситься в количестве 2 мг/см² кожи и обновляться каждые 2 часа.  </p>
+				<p class="bmod2">Подробнее</p>
+			</div>
+		</div>
+		</div>
+	
+</section> 
+
+<footer class="footer" id="cont">
+<h1>Контакты</h1>
+<div class="con_map">
+	<div class="con">
+		<div class="con1">
+		<p>Телефон: +79057769890</p>
+		<p>E-mail: belovaluda@yandex.ru </p>
+		<p>Адрес: улица Колонцова, 5,г.Мытищи</p>
+	</div>
+	<div class="button2 block11">Оставить заявку</div>
+	</div>
+	<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2235.9640403818776!2d37.762422716089446!3d55.91532388059723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b53127ca128c91%3A0x3f38c1255eb04214!2z0YPQuy4g0JrQvtC70L7QvdGG0L7QstCwLCA1LCDQnNGL0YLQuNGJ0LgsINCc0L7RgdC60LLQsCwgMTQxMDA5!5e0!3m2!1sru!2sru!4v1645627475121!5m2!1sru!2sru" width="100%" height="100%" style="border:1px solid black;" allowfullscreen="" loading="lazy"></iframe></div>
+</div>
+</footer> 
+</div>
+
+<div class="modal">
+	<div class="modal__popup">
+		<h1>Заполнтие форму, и мы с Вами
+			обязательно свяжемся</h1>
+		<form>
+
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Заявка с сайта Metamorfosa">
+			<input type="hidden" name="admin_email" value="titan-ser179@yandex.ru">
+			<input type="hidden" name="form_subject" value="Заявка с формы обратной связи">
+			<!-- END Hidden Required Fields -->
+			<input type="text" name="Имя" placeholder="Введите Ваше Имя..." required><br>
+			<input type="text" name="E-mail" placeholder="Введите Ваш E-mail..." required><br>
+			<input type="text" name="Телефон" placeholder="+7..."><br>
+			<textarea type="text" cols="20" rows="6" placeholder="Ваш комментарий..." name="Комментарий"></textarea>
+	  
+			<button class="block1">Отправить</button>
+		
+		  </form>
+
+	</div>
+</div>
+
+
+<div class="modal_info">
+	<div class="modal_info-window">
+		<h1>У ПАЦИЕНТОВ С АКНЕ СНИЖЕН УРОВЕНЬ ВИТАМИНА D</h1>
+		<div class="modal_img">
+			<img src="images/acne31.png" alt="">
+			<img src="images/acne21.png" alt="">
+		</div>
+		<p> <span>Какова связь между витамином D и акне?</span>  <br>
+		Оказывается, себоциты экспрессируют рецепторы к данному витамину — VDR, что подтверждается исследованиями, демонстрирующими способность витамина D влиять на функцию и физиологию себоцитов. Кроме того, витамин D обладает противовоспалительными свойствами — использование витамина D в культуре себоцитов снижало экпрессию  провоспалительных цитокинов IL-6 и IL-8, а также ММР-9 (матриксной металлопротеиназы-9), разрушающей соединительно-тканный каркас дермы. Помимо воспалительных  цитокинов, витамин D также вовлечен в работу иммунной системы, в частности, дифференцировку Th17.</p>
+	</div>
+</div>
+
+<div class="modal_info2">
+	<div class="modal_info-window2">
+		<h1>СОЛНЦЕЗАЩИТНЫЕ И УВЛАЖНЯЮЩИЕ СРЕДСТВА: КАК ПРАВИЛЬНО КОМБИНИРОВАТЬ?</h1>
+		<div class="modal_img2">
+			<img src="images/sun1.png" alt="">
+			<img src="images/sun2.png" alt="">
+		</div>
+		<p>Известно, для того чтобы средство с солнцезащитными фильтрами давало ту степень защиты, которая указана на его этикетке, оно должно наноситься в количестве 2 мг/см² кожи и обновляться каждые 2 часа. Если же экономить, реальная «солнцезащитная» сила продукта будет далека от заявленной, что создает угрозу ложной защиты и получения значительной дозы ультрафиолета. Поэтому специалисты все же рекомендуют использовать специализированные солнцезащитные средства, а увлажняющие препараты наносить отдельно. Но  как  именно, чтобы не  снизить их солнцезащитную  силу? В итоге было обнаружено, что использование увлажняющих средств как до, так и после солнцезащитных (стандартных с SPF ) не влияет на силу последних. Причем в исследовании увлажняющие продукты наносились за или через 10 минут, а не через 30, как рекомендуется в большинстве случаев, и при этом все равно не ухудшали защиту от солнца. Таким образом, увлажняющие средства можно наносить как до, так и после солнцезащитных. </p>
+		</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<script src="main.js"></script>
+
+<script> 
+
+	jQuery(document).ready(function() {
+	  var btn = $('#but');  
+	  $(window).scroll(function() {     
+		if ($(window).scrollTop() > 150) {
+		   btn.addClass('show');
+		 } else {
+		   btn.removeClass('show');
+		 }
+	   });
+	   btn.on('click', function(e) {
+		 e.preventDefault();
+		 $('html, body').animate({scrollTop:0}, '300');
+	   });
+	});
+	</script> 
+
+
+<script>
+
+$(document).ready(function() {
+$('a[href^="#"]').click(function(){
+var el = $(this).attr('href');
+$('body').animate({
+scrollTop: $(el).offset().top}, 1000);
+return false;
+});
+});
+
+</script>
+
+</body>
+</html>
